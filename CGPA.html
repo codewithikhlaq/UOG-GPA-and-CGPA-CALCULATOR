@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+</head>
+<style>
+
+    #gpa
+    {
+        margin-top: 15px;
+        color: azure;
+        background-color: rgb(35, 57, 4);
+        width: 300px;
+        height: auto;   
+         margin-left: 10px;
+    }
+  
+    #result
+    {
+        background-color: white;
+        border-bottom: 1px solid black;
+        width: 100px;
+        text-align: center;
+    }
+    #ch
+    {
+        background-color: white;
+        border-bottom: 1px solid black;
+        width: 100px;
+        text-align: center;
+    }
+    #msg
+    {
+        color: green;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button
+    {
+        background-color: rgb(119, 119, 198);
+        color: white;
+        margin-left: 120px;
+        width: 100px;
+        border-color: black;
+    }
+ 
+    th{
+        font-size: medium;
+       }
+    td{
+           text-align: center;
+           font-size: medium;
+           padding-top: 20px; 
+    }
+   
+  img{
+      margin-top: 10px;
+      height: 95px;
+      width: 100%;
+  }
+ 
+  input[type="text"]
+  {
+     border-top: none;
+     border-left: none ;
+     border-right: none;
+     border-bottom: 1px solid black;
+      width: 60px;
+      background: none;
+      text-align: center;
+  }
+  input[type="text"]:focus
+  {
+      border: 1px solid blue;
+      outline: none;
+  }
+  input[type="text"]::after
+  {
+      outline: none;
+  }
+  nav{
+    color: white;
+      background-color: rgb(119, 119, 198);
+      width: auto;
+      height: 90px;
+      padding-top: 10px;
+      text-align: right;
+      cursor: pointer;
+      
+  }
+  nav h3{
+      font-size: large;
+padding-top: 10px;
+text-align: center;
+  }
+  nav ul li{
+      font-size: small;
+      margin-top: 5px;
+      display: inline; 
+     text-align: right;
+     
+  }
+
+  nav ul li a{
+    color: white; 
+    margin-right: 5px;
+    text-decoration: none;
+}
+h4{
+        margin-top: 10px;
+        color: red;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav>
+        <h3>UOG GPA & CGPA CALCULATOR</h3>
+   
+            <ul class="option" id="optionlist">
+            <li><a href="index.html">HOME PAGE</a></li>
+            <li><a href="GPA Calculator.html">CALCULATE GPA</a></li>
+            <li><a href="Grade list.html">GRADE LIST</a></li>
+        </ul>
+            <div class="menu-icon">
+               <div class="line"></div>
+               <div class="line"></div> 
+               <div class="line"></div>
+            </div>
+          
+       
+    </nav>  
+    <h4>DEVELOPED BY: IKHLAQ AHMD</h4>
+<div id="gpa">
+<table>
+<tr>
+<th>SEMESTER</th>
+<th>GPA</th>
+
+<th>Credit Hour</th>  
+<th>Grade points</th>
+</tr>  
+
+<tr>
+    <td>Semester 1</td>
+    <td>
+        <input type="text" id="gr1" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr1" placeholder="C.Hours">
+    </td>
+    <td><p id="gp1"></p></td>
+</tr>
+<tr>
+    <td>Semester 2</td>
+    <td>
+        <input type="text" id="gr2" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr2" placeholder="C.Hours">
+    </td>
+        <td><p id="gp2"></p></td>
+</tr>
+<tr>
+    <td>Semester 3</td>
+    <td>
+        <input type="text" id="gr3" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr3" placeholder="C.Hours">
+    </td>
+    <td><p id="gp3"></p></td>
+</tr>
+<tr>
+    <td>Semester 4</td>
+    <td>
+        <input type="text" id="gr4" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr4" placeholder="C.Hours">
+    </td>
+    <td><p id="gp4"></p></td>
+</tr>
+<tr>
+    <td>Semester 5</td>
+    <td>
+        <input type="text" id="gr5" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr5" placeholder="C.Hours">
+    </td>
+    <td><p id="gp5"></p></td>
+</tr>
+<tr>
+    <td>Semester 6</td>
+    
+        <td>
+            <input type="text" id="gr6" placeholder="GPA" >
+        </td>
+        
+        <td>
+            <input type="text" id="cr6" placeholder="C.Hours">
+        </td>
+    <td><p id="gp6"></p></td>
+</tr>
+<tr>
+    <td>Semester 7</td>
+    <td>
+        <input type="text" id="gr7" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr7" placeholder="C.Hours">
+    </td>
+    <td><p id="gp7"></p></td>
+</tr>
+<tr>
+    <td>Semester 8</td>
+    <td>
+        <input type="text" id="gr8" placeholder="GPA">
+    </td>
+    
+    <td>
+        <input type="text" id="cr8" placeholder="C.Hours">
+    </td>
+    <td><p id="gp8"></p></td>
+</tr>
+</table>
+</div>
+<br>
+<button class="bn" onclick = "Calculation()">Calculate</button>
+
+<h5>Your CGPA: </h5>
+<p id="result"></p>
+
+<h5>Total Credit Hours: </h5>
+<p id="ch"></p>
+
+<p id="msg"></p>
+<script>
+document.getElementById("menu").addEventListener("change",function()
+{
+    var selected = this.value;
+    if(selected !== ""){
+        window.location.href=selected;
+    }
+})
+function Calculation()
+{
+   
+    var a1=document.getElementById('gr1').value;
+    var c1= a1=="" ? 0 : parseFloat(a1);
+    var a2=document.getElementById('gr2').value;
+    var c2= a2=="" ? 0 : parseFloat(a2);
+    var a3=document.getElementById('gr3').value;
+    var c3= a3=="" ? 0 : parseFloat(a3);
+
+    var a4=document.getElementById('gr4').value;
+    var c4= a4=="" ? 0 : parseFloat(a4);
+
+    var a5=document.getElementById('gr5').value;
+    var c5= a5=="" ? 0 : parseFloat(a5);
+    
+    var a6=document.getElementById('gr6').value;
+    var c6= a6=="" ? 0 : parseFloat(a6);
+    
+    var a7=document.getElementById('gr7').value;
+    var c7= a7=="" ? 0 : parseFloat(a7);
+    
+    var a8=document.getElementById('gr8').value;
+    var c8= a8=="" ? 0 : parseFloat(a8);
+    
+
+    var b1=document.getElementById('cr1').value;
+    var d1= b1=="" ? 0 : parseFloat(b1);
+    var b2=document.getElementById('cr2').value;
+    var d2= b2=="" ? 0 : parseFloat(b2);
+    var b3=document.getElementById('cr3').value;
+    var d3= b3=="" ? 0 : parseFloat(b3);
+    var b4=document.getElementById('cr4').value;
+    var d4= b4=="" ? 0 : parseFloat(b4);
+    var b5=document.getElementById('cr5').value;
+    var d5= b5=="" ? 0 : parseFloat(b5);
+    var b6=document.getElementById('cr6').value;
+    var d6= b6=="" ? 0 : parseFloat(b6);
+    var b7=document.getElementById('cr7').value;
+    var d7= b7=="" ? 0 : parseFloat(b7);
+    var b8=document.getElementById('cr8').value;
+    var d8= b8=="" ? 0 : parseFloat(b8);
+var a= c1*d1;
+var b= c2*d2;
+var c= c3*d3;
+var d= c4*d4;
+var e= c5*d5;
+var f= c6*d6;
+var g= c7*d7;
+var h= c8*d8;
+
+document.getElementById('gp1').textContent=a.toFixed(2);
+document.getElementById('gp2').textContent=b.toFixed(2);
+document.getElementById('gp3').textContent=c.toFixed(2);
+document.getElementById('gp4').textContent=d.toFixed(2);
+document.getElementById('gp5').textContent=e.toFixed(2);
+document.getElementById('gp6').textContent=f.toFixed(2);
+document.getElementById('gp7').textContent=g.toFixed(2);
+document.getElementById('gp8').textContent=h.toFixed(2);
+var x = a+b+c+d+e+f+g+h;
+var y = d1+d2+d3+d4+d5+d6+d7+d8;
+
+var z =x/y;
+document.getElementById('result').textContent= z.toFixed(2) ;
+document.getElementById('ch').textContent= y ;   
+
+document.getElementById('msg').textContent="Thank You for choosing this CGPA Calculator";
+}
+
+</script>
+
+</body>
+</html>

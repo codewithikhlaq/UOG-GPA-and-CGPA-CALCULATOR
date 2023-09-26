@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+</head>
+<style>
+
+    #gpa
+    {
+        height: 100vh;
+        color: azure;
+        background-color: rgb(35, 57, 4);
+        width: 300px;
+        height: auto;   
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+  
+    #result
+    {
+        background-color: white;
+        border-bottom: 1px solid black;
+        width: 100px;
+        text-align: center;
+    }
+    #ch
+    {
+        background-color: white;
+        border-bottom: 1px solid black;
+        width: 100px;
+        text-align: center;
+    }
+    #msg
+    {
+        color: green;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button
+    {
+        background-color: rgb(119, 119, 198);
+        color: white;
+        margin-left: 120px;
+        width: 100px;
+        border-color: black;
+    }
+ 
+    th{
+        font-size: medium;
+text-align: center;
+    }
+    td{
+           text-align: center;
+           font-size: small;
+    }
+   
+  img{
+      margin-top: 10px;
+      height: 110px;
+      width: 100%;
+  }
+  nav{
+    color: white;
+      background-color: rgb(119, 119, 198);
+      width: auto;
+      height: 90px;
+      padding-top: 10px;
+      text-align: right;
+      cursor: pointer;
+      
+  }
+  nav h3{
+      font-size: large;
+padding-top: 10px;
+text-align: center;
+  }
+  nav ul li{
+      font-size: small;
+      margin-top: 5px;
+      display: inline; 
+     text-align: right;
+     
+  }
+
+  nav ul li a{
+    color: white; 
+    margin-right: 5px;
+    text-decoration: none;
+}
+h4{
+        margin-top: 10px;
+        color: red;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <nav>
+        <h3>UOG GPA & CGPA CALCULATOR</h3>
+   
+            <ul class="option" id="optionlist">
+            <li><a href="index.html">HOME PAGE</a></li>
+            <li><a href="CGPA.html">CALCULATE CGPA</a></li>
+            <li><a href="Grade list.html">GRADE LIST</a></li>
+        </ul>
+            <div class="menu-icon">
+               <div class="line"></div>
+               <div class="line"></div> 
+               <div class="line"></div>
+            </div>
+          
+       
+    </nav>   
+ 
+    <h4>DEVELOPED BY: IKHLAQ AHMD</h4>
+
+  
+<div id="gpa">
+<table border="auto">
+<tr>
+<th>Subject</th>
+<th>Grade</th>
+<th>Points</th>
+<th>Credit Hour</th>  
+<th>Grade points</th>
+</tr>  
+
+<tr>
+    <td>Subject 1</td>
+    <td>
+        <select id="gr1">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p1"></p></td>
+    <td>
+        <select id="cr1">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp1"></p></td>
+</tr>
+<tr>
+    <td>Subject 2</td>
+    <td>
+        
+            <select id="gr2">
+                <option value="0.00">Select</option>
+                <option value="4.00">A+</option>
+                <option value="3.7">A</option>
+                <option value="3.4">B+</option>
+                <option value="3.00">B</option>
+                <option value="2.5">B-</option>
+                <option value="2.00">C+</option>
+                <option value="1.5">C</option>
+                <option value="1.00">D</option>
+                <option value="0.00">F</option>
+            </select>
+        </td>
+        <td><p id="p2"></p></td>
+        <td>
+            <select id="cr2">
+                <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            </select>
+        </td>
+        <td><p id="gp2"></p></td>
+</tr>
+<tr>
+    <td>Subject 3</td>
+    <td>
+        <select id="gr3">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p3"></p></td>
+    <td>
+        <select id="cr3">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp3"></p></td>
+</tr>
+<tr>
+    <td>Subject 4</td>
+    <td>
+        <select id="gr4">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p4"></p></td>
+    <td>
+        <select id="cr4">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp4"></p></td>
+</tr>
+<tr>
+    <td>Subject 5</td>
+    <td>
+        <select id="gr5">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p5"></p></td>
+    <td>
+        <select id="cr5">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp5"></p></td>
+</tr>
+<tr>
+    <td>Subject 6</td>
+    <td>
+        <select id="gr6">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p6"></p></td>
+    <td>
+        <select id="cr6">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp6"></p></td>
+</tr>
+<tr>
+    <td>Subject 7</td>
+    <td>
+        <select id="gr7">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p7"></p></td>
+    <td>
+        <select id="cr7">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp7"></p></td>
+</tr>
+<tr>
+    <td>Subject 8</td>
+    <td>
+        <select id="gr8">
+            <option value="0.00">Select</option>
+            <option value="4.00">A+</option>
+            <option value="3.7">A</option>
+            <option value="3.4">B+</option>
+            <option value="3.00">B</option>
+            <option value="2.5">B-</option>
+            <option value="2.00">C+</option>
+            <option value="1.5">C</option>
+            <option value="1.00">D</option>
+            <option value="0.00">F</option>
+        </select>
+    </td>
+    <td><p id="p8"></p></td>
+    <td>
+        <select id="cr8">
+            <option value="0">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </td>
+    <td><p id="gp8"></p></td>
+</tr>
+</table>
+</div>
+<br>
+<button class="bn" onclick = "Calculation()">Calculate</button>
+
+<h5>Your GPA: </h5>
+<p id="result"></p>
+
+<h5>Total Credit Hours: </h5>
+<p id="ch"></p>
+
+<p id="msg"></p>
+<script>
+document.addEventListener("DOMContentLoader", function()
+{
+    const menuIcon = document.querySelector("menu-icon");
+    const optionlist = document.getElementById("optionlist");
+
+    manuIcon.addEventListener("click",function(){
+        optionlist.style.display=(optionlist.style.display === "block") ? "none" : "block";
+    });
+});
+function Calculation()
+{
+    var a1=parseFloat(document.getElementById('gr1').value);
+    var a2=parseFloat(document.getElementById('gr2').value);
+    var a3=parseFloat(document.getElementById('gr3').value);
+    var a4=parseFloat(document.getElementById('gr4').value);
+    var a5=parseFloat(document.getElementById('gr5').value);
+    var a6=parseFloat(document.getElementById('gr6').value);
+    var a7=parseFloat(document.getElementById('gr7').value);
+    var a8=parseFloat(document.getElementById('gr8').value);
+
+    var b1=parseFloat(document.getElementById('cr1').value);
+    var b2=parseFloat(document.getElementById('cr2').value);
+    var b3=parseFloat(document.getElementById('cr3').value);
+    var b4=parseFloat(document.getElementById('cr4').value);
+    var b5=parseFloat(document.getElementById('cr5').value);
+    var b6=parseFloat(document.getElementById('cr6').value);
+    var b7=parseFloat(document.getElementById('cr7').value);
+    var b8=parseFloat(document.getElementById('cr8').value);
+
+    document.getElementById('p1').textContent=a1;
+    document.getElementById('p2').textContent=a2;
+    document.getElementById('p3').textContent=a3;
+    document.getElementById('p4').textContent=a4;
+    document.getElementById('p5').textContent=a5;
+    document.getElementById('p6').textContent=a6;
+    document.getElementById('p7').textContent=a7;
+    document.getElementById('p8').textContent=a8;
+var a= a1*b1;
+var b= a2*b2;
+var c= a3*b3;
+var d= a4*b4;
+var e= a5*b5;
+var f= a6*b6;
+var g= a7*b7;
+var h= a8*b8;
+
+document.getElementById('gp1').textContent=a.toFixed(2);
+document.getElementById('gp2').textContent=b.toFixed(2);
+document.getElementById('gp3').textContent=c.toFixed(2);
+document.getElementById('gp4').textContent=d.toFixed(2);
+document.getElementById('gp5').textContent=e.toFixed(2);
+document.getElementById('gp6').textContent=f.toFixed(2);
+document.getElementById('gp7').textContent=g.toFixed(2);
+document.getElementById('gp8').textContent=h.toFixed(2);
+var x = a+b+c+d+e+f+g+h;
+var y = b1+b2+b3+b4+b5+b6+b7+b8;
+
+var z =x/y;
+document.getElementById('result').textContent= z.toFixed(2) ;
+document.getElementById('ch').textContent= y ;   
+
+document.getElementById('msg').textContent="Thank You for choosing this GPA Calculator";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade List</title>
+</head>
+<style>
+
+    #gpa
+    {
+        color: azure;
+        background-color: rgb(35, 57, 4);
+        width: 300px;
+        height: auto;   
+         margin-top: 60px;
+         margin-left: 20px;
+    }
+  
+table td{
+padding-top: 20px;
+}
+    th{
+        font-size: medium;
+text-align: center;
+padding-left: 7px;
+
+    }
+   
+    td{
+        
+        padding-left: 10px;
+           text-align: center;
+           font-size: medium;
+    }
+   
+  img{
+      margin-top: 10px;
+      height: 110px;
+      width: 100%;
+  }
+  nav{
+    color: white;
+      background-color: rgb(119, 119, 198);
+      width: auto;
+      height: 90px;
+      padding-top: 10px;
+      text-align: right;
+      cursor: pointer;
+      
+  }
+  nav h3{
+      font-size: large;
+padding-top: 10px;
+text-align: center;
+  }
+  nav ul li{
+      font-size: small;
+      margin-top: 5px;
+      display: inline; 
+     text-align: right;
+     
+  }
+
+  nav ul li a{
+    color: white; 
+    margin-right: 5px;
+    text-decoration: none;
+}
+h4{
+        margin-top: 10px;
+        color: red;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav>
+        <h3>UOG GPA & CGPA CALCULATOR</h3>
+   
+            <ul class="option" id="optionlist">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="GPA Calculator.html">CALCULATE GPA</a></li>
+            <li><a href="CGPA.html">CALCULATE CGPA</a></li>
+            
+        </ul>
+            <div class="menu-icon">
+               <div class="line"></div>
+               <div class="line"></div> 
+               <div class="line"></div>
+            </div>
+          
+       
+    </nav>  
+    <h4>DEVELOPED BY: IKHLAQ AHMD</h4>
+<div id="gpa">
+<table>
+<tr>
+<th>Marks</th>
+<th>Grade</th>
+<th>Points</th>  
+<th>Remarks</th>
+</tr>  
+
+<tr>
+    <td> 84.5-100</td>
+    <td>
+    A+
+    </td>
+    <td>4.00</td>
+    <td>
+        Exceptional
+    </td>
+   
+</tr>
+<tr>
+    <td>79.5-84.49</td>
+    <td>
+        A
+    </td>
+  <td>3.70</td>  
+    <td>
+        Outstanding
+    </td>
+        
+</tr>
+<tr>
+    <td> 74.5-79.49</td>
+    <td>
+    B+
+    </td>
+    <td>3.40</td>
+    <td>
+        Excellent
+    </td>
+   
+</tr>
+<tr>
+    <td> 69.5-74.49</td>
+    <td>
+    B
+    </td>
+    <td>3.00</td>
+    <td>
+        Very Good
+    </td>
+   
+</tr>
+<tr>
+    <td> 64.5-69.49</td>
+    <td>
+    B-
+    </td>
+    <td>2.50</td>
+    <td>
+        Good
+    </td>
+   
+</tr>
+<tr>
+    <td> 59.5-64.49</td>
+    <td>
+   C+
+    </td>
+    <td>2.00</td>
+    <td>
+        Average
+    </td>
+   
+</tr>
+<tr>
+    <td> 54.5-59.49</td>
+    <td>
+    C
+    </td>
+    <td>1.50</td>
+    <td>
+        Satisfactory
+    </td>
+   
+</tr>
+<tr>
+    <td> 49.5-54.49</td>
+    <td>
+    D
+    </td>
+    <td>1.00</td>
+    <td>
+        Pass
+    </td>
+   
+</tr>
+<tr>
+    <td> 49.5-below</td>
+    <td>
+    F
+    </td>
+    <td>0.00</td>
+    <td>
+        Fail
+    </td>
+   
+</tr>
+</table>
+</div>
+<script>
+    document.getElementById("menu").addEventListener("change",function()
+{
+    var selected = this.value;
+    if(selected !== ""){
+        window.location.href=selected;
+    }
+})
+</script>
+</body>
+</html>
